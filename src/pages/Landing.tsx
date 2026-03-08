@@ -63,12 +63,16 @@ const Landing = () => {
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition">Features</a>
             <a href="#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition">How it Works</a>
-            <Button variant="outline" size="sm" className="rounded-full">
-              Sign In
-            </Button>
-            <Button size="sm" className="rounded-full text-primary-foreground" style={{ background: "var(--gradient-primary)" }}>
-              Get Started
-            </Button>
+            <Link to="/sign-in">
+              <Button variant="outline" size="sm" className="rounded-full">
+                Sign In
+              </Button>
+            </Link>
+            <Link to="/sign-up">
+              <Button size="sm" className="rounded-full text-primary-foreground" style={{ background: "var(--gradient-primary)" }}>
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </nav>
