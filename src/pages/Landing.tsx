@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { FileText, MessageSquare, Zap, Shield, Upload, Brain, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
