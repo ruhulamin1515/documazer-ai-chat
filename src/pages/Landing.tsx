@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FileText, MessageSquare, Zap, Shield, Upload, Brain, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -61,12 +62,16 @@ const Landing = () => {
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition">Features</a>
             <a href="#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition">How it Works</a>
-            <Button variant="outline" size="sm" className="rounded-full">
-              Sign In
-            </Button>
-            <Button size="sm" className="rounded-full text-primary-foreground" style={{ background: "var(--gradient-primary)" }}>
-              Get Started
-            </Button>
+            <Link to="/sign-in">
+              <Button variant="outline" size="sm" className="rounded-full">
+                Sign In
+              </Button>
+            </Link>
+            <Link to="/sign-up">
+              <Button size="sm" className="rounded-full text-primary-foreground" style={{ background: "var(--gradient-primary)" }}>
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -120,14 +125,16 @@ const Landing = () => {
             variants={fadeUp}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button
-              size="lg"
-              className="rounded-full px-8 h-12 text-base font-semibold text-primary-foreground shadow-lg"
-              style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-glow)" }}
-            >
-              Start for Free
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            <Link to="/sign-up">
+              <Button
+                size="lg"
+                className="rounded-full px-8 h-12 text-base font-semibold text-primary-foreground shadow-lg"
+                style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-glow)" }}
+              >
+                Start for Free
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
             <Button
               variant="outline"
               size="lg"
