@@ -29,7 +29,6 @@
     "drizzle-orm": "^0.28.5",
     "encoding": "^0.1.13",
     "eslint": "8.48.0",
-    "eslint-config-next": "13.4.19",
     "framer-motion": "^12.35.1",
     "langchain": "^0.0.150",
     "lucide-react": "^0.274.0",
