@@ -126,14 +126,16 @@ const Landing = () => {
             variants={fadeUp}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button
-              size="lg"
-              className="rounded-full px-8 h-12 text-base font-semibold text-primary-foreground shadow-lg"
-              style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-glow)" }}
-            >
-              Start for Free
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            <Link to="/sign-up">
+              <Button
+                size="lg"
+                className="rounded-full px-8 h-12 text-base font-semibold text-primary-foreground shadow-lg"
+                style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-glow)" }}
+              >
+                Start for Free
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
             <Button
               variant="outline"
               size="lg"
